@@ -35,21 +35,10 @@ npm install
 ```
 
 ## 2) Sett opp Neon Postgres
-
-> **Hva skal ligge i GitHub?**
-> Behold `*.example`-filen i repoet (her: `.env.example`).
-> `\.env.local` skal normalt **ikke** committes, og brukes kun lokalt/ i Vercel-miljøvariabler.
-
 1. Opprett konto/prosjekt i Neon.
 2. Opprett en database.
 3. Kopier connection string.
-4. Kopier eksempelvariabler til en lokal fil:
-
-```bash
-cp .env.example .env.local
-```
-
-5. Rediger deretter `.env.local` med dine verdier:
+4. Lag en `.env` fil i prosjektroten:
 
 ```env
 DATABASE_URL=postgres://user:password@ep-xxxx.neon.tech/dbname?sslmode=require
